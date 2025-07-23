@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+  --primary-bg: #0a183d;
+  --primary-accent: #ffd700;
+  --primary-text: #fff;
+  --secondary-bg: #162447;
+  --card-bg: rgba(255,255,255,0.05);
+  --card-border: rgba(255,255,255,0.12);
+  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --radius: 18px;
+  --transition: 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(135deg, #0a183d 0%, #162447 100%);
+}
+
+a {
+  color: var(--primary-accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover {
+  color: #fffbe7;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  color: var(--primary-accent);
+  margin-bottom: 0.5em;
+}
+
+button, .btn {
+  background: var(--primary-accent);
+  color: #0a183d;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75em 2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+button:hover, .btn:hover {
+  background: #fffbe7;
+  color: #0a183d;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin: 1.5rem 0;
+  backdrop-filter: blur(8px);
+}
+
+input, select, textarea {
+  background: #fff;
+  color: #0a183d;
+  border: 1px solid var(--primary-accent);
+  border-radius: var(--radius);
+  padding: 0.75em 1em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border var(--transition);
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #fffbe7;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--secondary-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-accent);
+  border-radius: 8px;
+}

@@ -1,0 +1,26 @@
+.vip-footer {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  background: rgba(10, 24, 61, 0.98);
+  color: var(--primary-accent);
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1rem;
+  box-shadow: 0 -2px 16px 0 rgba(31, 38, 135, 0.12);
+  border-top: 1px solid var(--card-border);
+  position: relative;
+  width: 100%;
+}
+.vip-footer p {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.vip-tagline {
+  display: block;
+  margin-top: 0.5em;
+  color: #fffbe7;
+  font-size: 0.95em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  opacity: 0.85;
+} 
